@@ -65,12 +65,12 @@ curl -sL --retry 3 "${RELEASE_URL}" | tar -xz
 
 if [ "$UID" != "0" ]; then
     echo "Installing to $DESTDIR using sudo"
-    sudo mv newrelic "$DESTDIR"
+    sudo mv nr-dashboard-hcl-gem "$DESTDIR"
     sudo chmod +x "$DESTDIR/nr-dashboard-hcl-gen"
     sudo chown root:0 "$DESTDIR/nr-dashboard-hcl-gen"
 else
     echo "Installing to $DESTDIR"
-    mv newrelic "$DESTDIR"
+    mv nr-dashboard-hcl-gem "$DESTDIR"
     chmod +x "$DESTDIR/nr-dashboard-hcl-gen"
     chown root:0 "$DESTDIR/nr-dashboard-hcl-gen"
 fi
