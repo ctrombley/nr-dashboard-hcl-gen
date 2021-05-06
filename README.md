@@ -1,6 +1,6 @@
 # nr-dashboard-hcl-gen
 
-Generates HCL configuration for [`newrelic_one_dashboard`](https://registry.terraform.io/providers/newrelic/newrelic/latest/docs/resources/one_dashboard) resources from exported JSON documents.
+Generates HCL configuration for [`newrelic_one_dashboard`](https://registry.terraform.io/providers/newrelic/newrelic/latest/docs/resources/one_dashboard) resources from [exported JSON documents](https://docs.newrelic.com/docs/query-your-data/explore-query-data/dashboards/manage-your-dashboard/#dash-json).
 
 ## Installing
 
