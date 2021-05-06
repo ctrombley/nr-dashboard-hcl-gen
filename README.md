@@ -2,6 +2,14 @@
 
 Generates HCL configuration for newrelic_one_dashboard resources from exported JSON documents.
 
+## Installing
+
+Install from the binaries on the release page, or via the install script:
+
+```
+curl https://raw.githubusercontent.com/ctrombley/nr-dashboard-hcl-gen/main/scripts/install.sh | bash
+```
+
 ## Usage
 
 Exported JSON can be fed to the tool via stdin or filename.
@@ -9,11 +17,11 @@ Exported JSON can be fed to the tool via stdin or filename.
 ### Using stdin
 
 ```
-cat dashboard.json | nr-dashboard-hcl-gen -l "my_dashboard" -o main.tf
+cat dashboard.json | nr-dashboard-hcl-gen -l "my_dashboard" > main.tf
 ```
 
 ### Using a file
 
 ```
-nr-dashboard-hcl-gen -l "my_dashboard" -i dashboard.json -o main.tf
+nr-dashboard-hcl-gen -l "my_dashboard" -i dashboard.json > main.tf
 ```

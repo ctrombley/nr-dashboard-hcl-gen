@@ -63,17 +63,9 @@ RELEASE_URL="https://github.com/ctrombley/nr-dashboard-hcl-gen/releases/download
 # Download & unpack the release tarball.
 curl -sL --retry 3 "${RELEASE_URL}" | tar -xz
 
-if [ "$UID" != "0" ]; then
-    echo "Installing to $DESTDIR using sudo"
-    sudo mv nr-dashboard-hcl-gen "$DESTDIR"
-    sudo chmod +x "$DESTDIR/nr-dashboard-hcl-gen"
-    sudo chown root:0 "$DESTDIR/nr-dashboard-hcl-gen"
-else
-    echo "Installing to $DESTDIR"
-    mv nr-dashboard-hcl-gen "$DESTDIR"
-    chmod +x "$DESTDIR/nr-dashboard-hcl-gen"
-    chown root:0 "$DESTDIR/nr-dashboard-hcl-gen"
-fi
+echo "Installing to $DESTDIR"
+mv nr-dashboard-hcl-gen "$DESTDIR"
+chmod +x "$DESTDIR/nr-dashboard-hcl-gen"
 
 # Delete the working directory when the install was successful.
 rm -r "$SCRATCH"
