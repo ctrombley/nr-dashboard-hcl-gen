@@ -14,6 +14,8 @@ curl https://raw.githubusercontent.com/ctrombley/nr-dashboard-hcl-gen/main/scrip
 
 Exported JSON can be fed to the tool via stdin or filename.
 
+The `-l` argument can be used to provide a resource label to apply to the generated resource.
+
 ### Using stdin
 
 ```
