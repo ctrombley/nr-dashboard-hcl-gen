@@ -1,4 +1,4 @@
-module github.com/ctrombley/json-to-hcl
+module github.com/ctrombley/nr-dashboard-hcl-gen
 
 go 1.16
 
