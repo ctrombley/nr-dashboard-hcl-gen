@@ -1,3 +1,0 @@
-156d0f11979313fcbe0d20e2a4fc0618f70b94ab88f7232ffd91b3b2b3e60b6f  nr-dashboard-hcl-gen_v0.0.0-next_Windows_x86_64.tar.gz
-c6e610770247181ae923f88872e3857b791185c2937bed7c27c350dc260baa8f  nr-dashboard-hcl-gen_v0.0.0-next_Darwin_x86_64.tar.gz
-f0c3dad16606d92a62126ff6f9f3565c8d3192e891f923228aad7b0ef5653c61  nr-dashboard-hcl-gen_v0.0.0-next_Linux_x86_64.tar.gz
